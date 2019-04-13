@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    {% if title %}
+        <title> Blog Site - {{ title }} </title>
+    {% else %}
+        <title> Blog Site </title>
+    {% endif %}
 </head>
 <body>
     <h1>Blog About!</h1>
